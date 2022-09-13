@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio voluptatibus pariatur dolore voluptates consequuntur, excepturi eaque deleniti possimus veritatis accusamus ea sint consectetur quis commodi. Suscipit ipsum debitis laboriosam esse.</p>
+    <h1 id="abc"></h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio voluptatibus pariatur dolore voluptates consequuntur, excepturi eaque deleniti possimus veritatis accusamus ea sint consectetur quis commodi. Suscipit ipsum debitis laboriosam esse.</p>
+    <button id="btn1">Click here</button>
+    <script>
+        
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#abc").load('data.php');
+            })
+        });
+
+    </script>
+    
+</body>
+</html>
