@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>the title</title>
+<script type="text/javascript"
+src="../jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+    $("em").addClass("selected");
+    $("#myid").addClass("highlight myclass");
+    $(".myclass1").addClass("third");
+    });
+</script>
+<style>
+.selected { color:rgb(98, 4, 4); }
+.highlight { background:rgb(96, 157, 181); }
+.myclass{font-size: 30px;border-bottom: 2px solid rgb(164, 68, 68);}
+#myid{font-family: 'Courier New', Courier, monospace;}
+.third{background-color: #a2a6a7; border-bottom: 2px dotted #fb5200;}
+
+</style>
+</head>
+<body>
+<em title="Bold and Brave">This is first paragraph.</em>
+<p id="myid">This is second paragraph.</p>
+<p class="myclass1">This is third paragraph.</p> 
+</body>
+</html>

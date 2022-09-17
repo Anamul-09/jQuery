@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>the title</title>
+<script type="text/javascript"
+src="../jquery.min.js"></script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function() {
+$("li").eq(1).addClass("selected1");
+$("li").eq(3).addClass("selected2");
+$("li").eq(4).addClass("selected3");
+$("p").eq(0).addClass("pra1");
+$("p").eq(2).addClass("pra2");
+});
+</script>
+<style>
+.selected1 { color:red; }
+.selected2 { background-color: aqua; border-bottom: 2px dotted #fb5200; }
+.selected3 { color:blue; }
+.pra1{background-color: aquamarine; border-bottom: 3px solid rgb(40, 2, 2);}
+.pra2{background-color: #fb5200; border-bottom: 3px solid rgb(18, 195, 9);}
+</style>
+</head>
+<body>
+<div>
+<ul>
+<li>list item 1</li>
+<li>list item 2</li>
+<li>list item 3</li>
+<li>list item 4</li>
+<li>list item 5</li>
+<li>list item 6</li>
+<p>First pragraph</p>
+<p>First pragraph</p>
+<p>First pragraph</p>
+</ul>
+</div>
+</body>
+</html>
