@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>the title</title>
+<script type="text/javascript"src="../jquery.min.js"></script>
+<script type="text/javascript" language="javascript">
+
+$(document).ready(function() {
+    $(".btn").click(function(){
+        // $(".name").after("<input type='text' placeholder='Enter your name'> </br>")
+        $(".fm").append("<input class='name' type='text' placeholder='Enter your name'><button class='btnR'>Remove </button> </br>");
+        $(".btnR").click(function(){
+            $(this).remove(".name")
+        })
+  
+    });   
+});
+
+</script>
+<style>
+
+</style>
+</head>
+<body>
+
+    <button class="btn">Add </button>
+   <form action="" class="fm">
+    <input class="name" type="text" placeholder="Enter name"><br>
+   </form>
+    
+<!--    
+    <button class="btn1">Before</button>
+    <button class="btn2">After</button>
+
+    <ul class="country">
+        <li>Add item</li>
+    </ul> -->
+   
+    
+   
+   
+</body>
+</html>
+

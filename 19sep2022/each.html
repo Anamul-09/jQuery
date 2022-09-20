@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Check missing images</title>
+    <script type="text/javascript"src="../jquery.min.js"></script>
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function ()
+
+{
+                var images = ['1.png', '2.png', '3.png','4.png', '51.png'];
+                var html = '';
+                $.each(images, function (key, value) {
+                    html += '<img src="' + value + '" />';
+                });
+
+                $('#display').html(html);
+
+                $('img').on('error',function() {
+                    $(this).replaceWith('<img src="missing.png"alt = "Could not load image" > ');
+                });
+        });
+    </script>
+
+    <style type="text/css">
+        div {
+            border: 1px solid black;
+            float: left;
+        }
+
+        img {
+            width: 180px;
+            height: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="display"></div>
+</body>
+
+</html>
