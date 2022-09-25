@@ -16,7 +16,7 @@
            var id = $(this).val();
 
            $.get('student_list.php',{bid:id},function(data){
-            $("#show").html(data)
+            $("#options").html(data)
            })
         })
       })
@@ -46,6 +46,10 @@
             ?>
 
             
+        </select>
+
+        <select name="" id="options">
+          <option value="" disabled selected> Select one</option>
         </select>
       </form>
 
