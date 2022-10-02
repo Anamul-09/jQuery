@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $("#login").click(function(){
+                var email = $("#email").val();
+                var pass = $("#pass").val();
+                // alert(email)
+                $.get('check.php',{em:email,pw:pass},function(data){
+                    $(".show").html(data);
+                })
+            })
+        })
+
+    </script>
+    <title>Login form</title>
+    
+</head>
+<body>
+
+    <div class="form">
+     
+        <h1>Login Form</h1>
+        <form action="" method="get">
+        
+            <label for="">Email:</label><input type="email" placeholder="Enater your email" id="email"><br>
+         
+           <label for="">Password:</label><input type="password" placeholder="Enater  password" id="pass"><br>
+        
+            
+            <input type="button" value="Submit" id="login">
+        
+    </form>
+
+    <div class="show"></div>
+       
+    </div>
+
+    
+    
+        
+    
+    
+</body>
+</html>
